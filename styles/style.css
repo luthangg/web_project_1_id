@@ -70,7 +70,7 @@
 .description {
   background-color: white;
   width: 80%;
-  min-width: 784px;
+  margin: auto;
 }
 
 .two-columns {
