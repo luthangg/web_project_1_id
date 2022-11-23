@@ -35,7 +35,6 @@
  font-size: 102px;
  font-weight: bold;
  margin-left: 64px;
- justify-content: center;
  align-items: center;
  z-index: 1;
 }
@@ -55,6 +54,8 @@
   position: absolute;
   left: 64px;
   bottom: 15px;
+  color: #2F80ED;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -68,6 +69,8 @@
 
 .description {
   background-color: white;
+  width: 80%;
+  min-width: 784px;
 }
 
 .two-columns {
@@ -196,6 +199,8 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
+  color: #2F80ED;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -329,6 +334,11 @@
   font-size: 18px;
   font-weight: normal;
   padding: 0px;
+}
+
+.column-link>li>a {
+  color:white;
+  text-decoration: none;
 }
 
 .social-icons {
