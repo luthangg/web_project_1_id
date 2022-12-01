@@ -165,25 +165,32 @@
   justify-content: space-between;
 }
 
-.table__cell {
+.table-cell {
   width: 250px;
   margin-top: 60px;
 }
 
-.table__heading {
+.table-heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   padding-left: 0px;
 }
 
-.table__text {
+.table-text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   text-align: top;
 }
 
+.table_theme_dark {
+  border: purple 3px solid;
+}
+
+.table-cell_theme_dark {
+  width: 200px;
+}
 
 .feynman {
   height: 790px;
