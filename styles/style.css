@@ -1,3 +1,21 @@
+@keyframes rotation {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(345deg);
+  }
+}
+
+@keyframes rotation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -17,6 +35,7 @@
   position: relative;
   display: flex;
   margin-bottom: 100px;
+  overflow: hidden;
   background-color: #F2F2F2;
 }
 
@@ -67,6 +86,18 @@
   z-index: 1;
 }
 
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+  position: absolute;
+  background-color: #2F80ED;
+  transform: rotate(-15deg);
+  animation: rotation 20s infinite linear;
+}
+
 .description {
   background-color: white;
   width: 80%;
@@ -109,7 +140,7 @@
 }
 
 .section-title {
-  line-height: 69px;
+  line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   width: 60%;
@@ -204,15 +235,6 @@
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  right: 0;
-  top: 64px;
-  z-index: 0;
-  position: absolute;
-  background-color: #2F80ED;
-}
 
 .kaufman {
   position: relative;
@@ -228,7 +250,8 @@
   right: -124px;
   top: 5px;
   z-index: -1;
-  }
+  animation: rotation1 20s infinite linear;
+}
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
@@ -290,7 +313,7 @@
   width: 90%;
   display: flex;
   flex-basis: 711px;
-  margin: auto 0px auto auto;
+  margin: auto;
 }
 
 .column__content_copyright {
@@ -343,4 +366,134 @@
 
 .social-icons {
 margin-left: 10px;
+}
+
+.techniques {
+  margin: 100px auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  margin: 60px auto 100px auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cards__item {
+  width: 250px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 43px;
+  margin-bottom: 16px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.iframes {
+  display: flex;
+  justify-content: center;
+  margin: auto auto 160px auto;
+}
+
+.iframes > iframe {
+  margin: 50px 20px;
+}
+
+.khan {
+  margin-top: 105px;
+  background-color: #F2F2F2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.quote {
+  margin: 50px auto 36px auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.book-container {
+  margin-top: 68px;
+  height: 620px;
+  width: 608px;
+  position: relative;
+}
+
+.book-pic {
+width: 630px;
+z-index: 0;
+}
+
+.buy-link {
+  line-height: 42;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2F80ED;
+  text-decoration: none;
+  position: absolute;
+  top: -630px;
+  right: -250px;
+}
+
+.logo-zone {
+  width: 1100px;
+  margin: 80px auto 217px;
+}
+
+.logo {
+width: 270px;
+height: 38px;
+}
+
+.logo-zone > a {
+  text-decoration: none;
 }
