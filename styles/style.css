@@ -319,7 +319,7 @@
   margin: auto;
 }
 
-.column__content_copyright {
+.column-content_copyright {
   margin-right: 680px;
 }
 
@@ -344,12 +344,12 @@
   padding: 0px;
 }
 
-.logo_place_footer {
+.logo-place_footer {
   width: 183px;
   height: 35px;
 }
 
-.column__content_about {
+.column-content_about {
   margin-right: 200px;
 }
 
